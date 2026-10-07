@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Avaliações dos Alunos</title>
+
+    <link rel="stylesheet" href="css/cores_bli.css">
+    <link rel="stylesheet" href="css/avaliacoes.css">
+
+    <script src="js/avaliando.js" defer></script>
+    
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>⭐ Avaliações dos Alunos</h1>
+
+    <p>
+        Análise dos livros da biblioteca
+    </p>
+
+</header>
+
+
+
+<div class="container">
+
+
+    <!-- ================================================= -->
+    <!-- RESUMO -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📊 Resumo
+        </h2>
+
+
+        <div class="numero">
+
+            <h3 id="totalAvaliacoes">
+                0
+            </h3>
+
+            <p>
+                Avaliações
+            </p>
+
+        </div>
+
+
+        <div class="numero">
+
+            <h3 id="mediaGeral">
+                0
+            </h3>
+
+            <p>
+                Média ⭐
+            </p>
+
+        </div>
+
+
+        <div class="numero">
+
+            <h3 id="totalLivros">
+                0
+            </h3>
+
+            <p>
+                Livros avaliados
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- AVALIAÇÕES -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📚 Avaliações recebidas
+        </h2>
+
+
+        <div id="listaAvaliacoes">
+        </div>
+
+
+        <button
+            class="atualizar"
+            onclick="carregarAvaliacoes()">
+
+            🔄 Atualizar
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- RANKING -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📈 Livros mais avaliados
+        </h2>
+
+
+        <div id="rankingLivros">
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- EMPRÉSTIMOS -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📖 Análise de empréstimos
+        </h2>
+
+
+        <div id="listaEmprestimos">
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- VOLTAR -->
+    <!-- ================================================= -->
+
+    <button
+        class="voltar"
+        onclick="window.location='bibliotecario.html'">
+
+        ⬅ Voltar para biblioteca
+
+    </button>
+
+
+</div>
+
+
+
+</body>
+</html>

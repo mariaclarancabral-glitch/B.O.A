@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Área do Professor</title>
+
+<link rel="stylesheet" href="css/professor.css">
+
+<script src="js/professor.js" defer></script>
+<body>
+
+
+<header>
+
+<h1>👨‍🏫 Área do Professor</h1>
+
+<p>Consulta, Solicitação e Recomendações de Livros</p>
+
+</header>
+
+
+
+
+<div class="container">
+
+
+<div class="card pesquisa">
+
+
+<h2>🔎 Procurar Livros</h2>
+
+
+<label>Nome do Livro</label>
+
+<input type="text" id="nome">
+
+
+
+<label>Autor</label>
+
+<input type="text" id="autor">
+
+
+
+<label>ISBN</label>
+
+<input type="text" id="isbn">
+
+
+
+<button onclick="pesquisarLivro()">
+
+🔍 Pesquisar Livro
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card pesquisa">
+
+
+<h2>📚 Solicitar Empréstimo</h2>
+
+
+<label>Livro Desejado</label>
+
+
+<input
+type="text"
+id="livroEmprestimo"
+placeholder="Digite o nome do livro">
+
+
+
+<button onclick="emprestimo()">
+
+📖 Solicitar Empréstimo
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card pesquisa">
+
+
+<h2>📢 Enviar Recomendação aos Alunos</h2>
+
+
+<label>Nome do Livro</label>
+
+
+<input
+type="text"
+id="livroProfessor"
+placeholder="Nome do livro">
+
+
+
+<label>Motivo da Recomendação</label>
+
+
+<textarea
+id="motivoProfessor"
+placeholder="Ex.: Livro importante para atividade ou leitura complementar.">
+</textarea>
+
+
+
+<button onclick="enviarRecomendacao()">
+
+📤 Enviar para Todos os Alunos
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card enem">
+
+
+<h2>🎓 Livros Recomendados pela Gestão</h2>
+
+
+<p>
+A Gestão Escolar é responsável por cadastrar
+os livros oficiais recomendados.
+</p>
+
+
+
+<div id="listaGestao">
+
+<p>Nenhum livro recomendado.</p>
+
+</div>
+
+
+
+<button onclick="carregarLivrosGestao()">
+
+🔄 Atualizar Lista
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div style="padding:20px;">
+
+
+<button
+class="voltar"
+onclick="window.location='index.html'">
+
+
+⬅ Voltar ao Login
+
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

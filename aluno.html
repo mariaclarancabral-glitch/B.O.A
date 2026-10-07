@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Área do Aluno</title>
+
+    <link rel="stylesheet" href="css/cores.css">
+    <link rel="stylesheet" href="css/aluno.css">
+
+    <script src="js/aluno.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>👨‍🎓 Área do Aluno</h1>
+    <p>Biblioteca Escolar</p>
+</header>
+
+<div class="container">
+
+    <!-- LIVROS ATRASADOS -->
+    <button
+        class="atrasado"
+        onclick="window.location='alunos_atrasados_alu.html'">
+
+        🔒 Livros Atrasados
+
+    </button>
+
+
+    <!-- LIVROS RECOMENDADOS PELO BIBLIOTECÁRIO -->
+    <div class="card">
+
+        <h2>📚 Livros recomendados da biblioteca</h2>
+
+        <div id="listaLivros">
+
+            <p>Carregando recomendações...</p>
+
+        </div>
+
+        <button
+            class="enviar"
+            onclick="carregarLivrosRecomendados()">
+
+            🔄 Atualizar Livros
+
+        </button>
+
+    </div>
+
+
+    <!-- AVALIAÇÃO -->
+    <div class="card">
+
+        <h2>⭐ Avalie um Livro</h2>
+
+        <input
+            type="text"
+            id="nomeAluno"
+            placeholder="Seu nome">
+
+        <input
+            type="text"
+            id="livroAvaliado"
+            placeholder="Nome do livro">
+
+        <textarea
+            id="comentario"
+            placeholder="Escreva seu comentário"></textarea>
+
+        <p>
+            <b>Avaliação:</b>
+        </p>
+
+        <div class="estrelas">
+
+            <span
+                class="estrela"
+                onclick="avaliar(1)">
+                ★
+            </span>
+
+            <span
+                class="estrela"
+                onclick="avaliar(2)">
+                ★
+            </span>
+
+            <span
+                class="estrela"
+                onclick="avaliar(3)">
+                ★
+            </span>
+
+            <span
+                class="estrela"
+                onclick="avaliar(4)">
+                ★
+            </span>
+
+            <span
+                class="estrela"
+                onclick="avaliar(5)">
+                ★
+            </span>
+
+        </div>
+
+        <p id="notaSelecionada">
+            Nenhuma estrela selecionada.
+        </p>
+
+        <button
+            class="enviar"
+            onclick="enviarAvaliacao()">
+
+            📤 Enviar Avaliação
+
+        </button>
+
+    </div>
+
+
+    <!-- RECOMENDAÇÕES DOS PROFESSORES -->
+    <div class="card">
+
+        <h2>🎓 Recomendações dos Professores</h2>
+
+        <div id="listaRecomendacoes">
+
+            <p>Nenhuma recomendação cadastrada.</p>
+
+        </div>
+
+        <button
+            class="enviar"
+            onclick="carregarRecomendacoes()">
+
+            🔄 Atualizar Recomendações
+
+        </button>
+
+    </div>
+
+
+    <!-- SAIR -->
+    <button
+        class="voltar"
+        onclick="window.location='index.html'">
+
+        ⬅ Sair
+
+    </button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recomendações da Gestão</title>
+
+
+<link rel="stylesheet" href="css/recomenda.css">
+
+<link rel="stylesheet" href="css/gestao.css">
+
+<script src="js/recomenda_ges.js" defer></script>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<h1>📢 Recomendações da Gestão</h1>
+
+
+<p>
+
+Envio de livros recomendados para professores e alunos
+
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+📚 Nova Recomendação
+
+</h2>
+
+
+
+
+
+
+
+<label>
+
+Nome do Livro
+
+</label>
+
+
+<input id="livro"
+
+placeholder="Digite o nome do livro">
+
+
+
+
+
+
+
+<label>
+
+Autor
+
+</label>
+
+
+<input id="autor"
+
+placeholder="Nome do autor">
+
+
+
+
+
+
+
+<label>
+
+Enviar para
+
+</label>
+
+
+<select id="destino">
+
+
+<option value="professores">
+
+👨‍🏫 Professores
+
+</option>
+
+
+
+<option value="alunos">
+
+👨‍🎓 Alunos
+
+</option>
+
+
+
+<option value="todos">
+
+👥 Professores e Alunos
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<label>
+
+Categoria
+
+</label>
+
+
+<select id="categoria">
+
+
+<option>
+
+🎓 ENEM
+
+</option>
+
+
+<option>
+
+📖 Literatura
+
+</option>
+
+
+<option>
+
+📝 Atividade Escolar
+
+</option>
+
+
+<option>
+
+📚 Leitura Complementar
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+
+
+<label>
+
+Motivo da recomendação
+
+</label>
+
+
+
+<textarea
+
+id="motivo"
+
+placeholder="Explique por que o livro foi recomendado">
+
+</textarea>
+
+
+
+
+
+
+
+<button
+
+class="enviar"
+
+onclick="enviarRecomendacao()">
+
+
+
+📤 Enviar Recomendação
+
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+📋 Histórico de Recomendações
+
+</h2>
+
+
+
+<div id="lista">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<button
+
+class="btn-voltar"
+
+onclick="window.location='gestao.html'">
+
+
+⬅ Voltar
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>

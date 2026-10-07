@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Procurar Livros</title>
+
+<link rel="stylesheet" href="css/cores_bli.css">
+<link rel="stylesheet" href="css/procurar.css">
+
+<script src="js/procurar.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+<h1>🔎 Procurar Livros</h1>
+
+<p>Pesquise livros cadastrados na biblioteca.</p>
+
+</header>
+
+<div class="container">
+
+<label>Nome do Livro</label>
+<input type="text" id="nome">
+
+<label>Autor</label>
+<input type="text" id="autor">
+
+<label>Gênero</label>
+
+<input
+type="text"
+id="genero"
+list="listaGeneros"
+placeholder="Digite ou pesquise um gênero">
+
+<datalist id="listaGeneros">
+
+<option value="">
+<option value="Ação">
+<option value="Aventura">
+<option value="Autoajuda">
+<option value="Arte">
+<option value="Arquitetura">
+<option value="Astronomia">
+<option value="Biografia">
+<option value="Best Seller">
+<option value="Ciência">
+<option value="Ciência Política">
+<option value="Ciência da Computação">
+<option value="Clássico">
+<option value="Comédia">
+<option value="Conto">
+<option value="Crônica">
+<option value="Crime">
+<option value="Cyberpunk">
+<option value="Didático">
+<option value="Distopia">
+<option value="Drama">
+<option value="Economia">
+<option value="Educação">
+<option value="Ensaio">
+<option value="Esportes">
+<option value="Espiritualidade">
+<option value="Fantasia">
+<option value="Fantasia Épica">
+<option value="Fantasia Urbana">
+<option value="Ficção">
+<option value="Ficção Científica">
+<option value="Filosofia">
+<option value="Folclore">
+<option value="Geografia">
+<option value="Guerra">
+<option value="História">
+<option value="História do Brasil">
+<option value="HQ">
+<option value="Humor">
+<option value="Infantil">
+<option value="Juvenil">
+<option value="Jornalismo">
+<option value="Lendas">
+<option value="Literatura Brasileira">
+<option value="Literatura Estrangeira">
+<option value="Light Novel">
+<option value="Mangá">
+<option value="Mangá Shonen">
+<option value="Mangá Shojo">
+<option value="Mangá Seinen">
+<option value="Mangá Josei">
+<option value="Medicina">
+<option value="Mistério">
+<option value="Mitologia">
+<option value="Música">
+<option value="Natureza">
+<option value="Negócios">
+<option value="Paranormal">
+<option value="Policial">
+<option value="Poesia">
+<option value="Psicologia">
+<option value="Quadrinhos">
+<option value="Realismo">
+<option value="Religião">
+<option value="Romance">
+<option value="Romance Contemporâneo">
+<option value="Romance Histórico">
+<option value="Romance Juvenil">
+<option value="Romance Policial">
+<option value="Romance LGBTQIA+">
+<option value="Saúde">
+<option value="Suspense">
+<option value="Steampunk">
+<option value="Tecnologia">
+<option value="Terror">
+<option value="Thriller">
+<option value="Teatro">
+<option value="Turismo">
+<option value="Viagem">
+<option value="Western">
+<option value="Zumbi">
+
+</datalist>
+
+<label>Ano de Publicação</label>
+<input type="number" id="ano">
+
+<label>ISBN</label>
+<input type="text" id="isbn">
+
+<label>Idioma</label>
+
+<select id="idioma">
+
+<option value="">Todos</option>
+
+<option>Português</option>
+<option>Inglês</option>
+<option>Espanhol</option>
+<option>Francês</option>
+
+</select>
+
+<label>Editora</label>
+<input type="text" id="editora">
+
+<label>Localização na Estante</label>
+<input type="text" id="localizacao">
+
+<button class="pesquisar" onclick="pesquisarLivro()">
+
+🔎 Pesquisar Livro
+
+</button>
+
+<button class="voltar" onclick="window.location.href='bibliotecario.html'">
+
+⬅ Voltar
+
+</button>
+
+<h2>Resultado da Pesquisa</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ISBN</th>
+<th>Título</th>
+<th>Autor</th>
+<th>Gênero</th>
+<th>Ano</th>
+<th>Idioma</th>
+<th>Editora</th>
+<th>Localização</th>
+
+</tr>
+
+</thead>
+
+<tbody id="resultado">
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+
+</html>

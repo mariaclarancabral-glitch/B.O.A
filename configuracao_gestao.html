@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Configurações da Gestão</title>
+
+<link rel="stylesheet" href="css/gestao.css">
+
+<link rel="stylesheet" href="css/configuracao_gestao.css">
+
+<script src="js/confi_ges.js" defer></script>
+<body>
+
+
+<header>
+
+<h1>⚙ Configurações da Gestão</h1>
+
+<p>
+
+Controle do sistema da biblioteca
+
+</p>
+
+</header>
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+🏫 Dados da Escola
+
+</h2>
+
+
+
+<label>
+
+Nome da Escola
+
+</label>
+
+
+<input
+
+id="nomeEscola"
+
+placeholder="Nome da escola">
+
+
+
+
+
+<label>
+
+Ano Letivo
+
+</label>
+
+
+<input
+
+id="anoLetivo"
+
+placeholder="2026">
+
+
+
+
+
+
+<button
+
+class="salvar"
+
+onclick="salvarEscola()">
+
+
+
+💾 Salvar Dados
+
+
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+👥 Criar Usuário
+
+</h2>
+
+
+
+<label>
+
+Nome
+
+</label>
+
+
+<input
+
+id="nomeUsuario">
+
+
+
+
+
+
+<label>
+
+Função
+
+</label>
+
+
+<select id="funcaoUsuario">
+
+
+<option value="gestao">
+
+👩‍💼 Gestão
+
+</option>
+
+
+
+<option value="professor">
+
+👨‍🏫 Professor
+
+</option>
+
+
+
+<option value="bibliotecario">
+
+📚 Bibliotecário
+
+</option>
+
+
+
+<option value="aluno">
+
+👨‍🎓 Aluno
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+
+<label>
+
+Login
+
+</label>
+
+
+<input
+
+id="loginUsuario">
+
+
+
+
+
+
+
+<label>
+
+Senha
+
+</label>
+
+
+<input
+
+id="senhaUsuario"
+
+type="password">
+
+
+
+
+
+
+
+<button
+
+class="salvar"
+
+onclick="criarUsuario()">
+
+
+
+➕ Criar Conta
+
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+📋 Usuários cadastrados
+
+</h2>
+
+
+
+<div id="listaUsuarios">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<button
+
+class="voltar"
+
+onclick="window.location='gestao.html'">
+
+
+⬅ Voltar para Gestão
+
+
+</button>
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

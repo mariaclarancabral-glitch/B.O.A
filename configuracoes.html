@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Configurações</title>
+
+
+<link rel="stylesheet" href="css/cores_bli.css">
+
+<link rel="stylesheet" href="css/configuracoes.css">
+
+<script src="js/confi_bli.js" defer></script>
+
+
+<body>
+
+<header>
+
+<h1>⚙ Configurações</h1>
+
+<p>Painel Administrativo da Biblioteca</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>👤 Perfil do Bibliotecário</h2>
+
+<label>Nome</label>
+<input type="text" id="nomeBibliotecario">
+
+<label>Cargo</label>
+<input type="text" id="cargoBibliotecario">
+
+<label>E-mail</label>
+<input type="email" id="emailBibliotecario">
+
+<button class="salvar"
+onclick="salvarPerfil()">
+
+💾 Salvar Perfil
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🏫 Informações da Biblioteca</h2>
+
+<label>Nome da Escola</label>
+<input type="text" id="nomeEscola">
+
+<label>Nome da Biblioteca</label>
+<input type="text" id="nomeBiblioteca">
+
+<label>Horário de Funcionamento</label>
+<input type="text" id="horario">
+
+<label>Telefone</label>
+<input type="text" id="telefone">
+
+<label>E-mail</label>
+<input type="email" id="emailBiblioteca">
+
+<button class="salvar"
+onclick="salvarBiblioteca()">
+
+💾 Salvar Informações
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Configuração dos Empréstimos</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Dias para devolução</label>
+<input type="number" id="diasEmprestimo">
+
+</div>
+
+<div>
+
+<label>Máximo de livros</label>
+<input type="number" id="maxLivros">
+
+</div>
+
+<div>
+
+<label>Multa por dia (R$)</label>
+<input type="number"
+step="0.01"
+id="multa">
+
+</div>
+
+</div>
+
+<button class="salvar"
+onclick="salvarEmprestimo()">
+
+💾 Salvar Configurações
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📖 Recomendações dos Professores</h2>
+
+<textarea
+id="recomendacoes"
+placeholder="Digite aqui as recomendações dos professores..."></textarea>
+
+<button class="salvar"
+onclick="salvarRecomendacoes()">
+
+💾 Salvar Recomendações
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🎨 Aparência</h2>
+
+<select id="tema">
+
+<option value="azul">Azul</option>
+
+<option value="verde">Verde</option>
+
+<option value="vermelho">Vermelho</option>
+
+<option value="escuro">Escuro</option>
+
+</select>
+
+<button class="azul"
+onclick="salvarTema()">
+
+🎨 Salvar Tema
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>💾 Backup</h2>
+
+<button class="azul"
+onclick="fazerBackup()">
+
+📥 Fazer Backup
+
+</button>
+
+<button class="azul"
+onclick="restaurarBackup()">
+
+📤 Restaurar Backup
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🗑 Limpeza do Sistema</h2>
+
+<button class="vermelho"
+onclick="apagarEmprestimos()">
+
+Apagar Empréstimos
+
+</button>
+
+<button class="vermelho"
+onclick="apagarAvaliacoes()">
+
+Apagar Avaliações
+
+</button>
+
+<button class="vermelho"
+onclick="apagarRelatorios()">
+
+Apagar Relatórios
+
+</button>
+
+<button class="vermelho"
+onclick="apagarTudo()">
+
+Apagar Tudo
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🔐 Alterar Senha</h2>
+
+<input
+type="password"
+id="senhaAtual"
+placeholder="Senha atual">
+
+<input
+type="password"
+id="novaSenha"
+placeholder="Nova senha">
+
+<input
+type="password"
+id="confirmarSenha"
+placeholder="Confirmar nova senha">
+
+<button class="salvar"
+onclick="alterarSenha()">
+
+Salvar Senha
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>ℹ Sobre o Sistema</h2>
+
+<div class="info">
+
+<b>Sistema:</b> Biblioteca Escolar<br>
+
+<b>Versão:</b> 1.0<br>
+
+<b>Ano:</b> 2026<br>
+
+<b>Desenvolvedora:</b> Maria Clara 
+
+</div>
+
+</div>
+
+<div class="card">
+
+<button
+class="cinza"
+onclick="window.location='bibliotecario.html'">
+
+⬅ Voltar
+
+</button>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

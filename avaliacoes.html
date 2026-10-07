@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avaliações dos Alunos</title>
+
+<link rel="stylesheet" href="css/avaliacao_ges.css">
+
+<link rel="stylesheet" href="css/gestao.css">
+
+<script src="js/avaliações_ges.js" defer></script>
+
+<body>
+
+<header>
+
+<h1>⭐ Avaliações dos Alunos</h1>
+
+<p>Biblioteca Escolar</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🔎 Pesquisar</h2>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar por aluno ou livro..."
+onkeyup="pesquisar()">
+
+</div>
+
+<div class="card">
+
+<h2>📊 Estatísticas</h2>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Total de Avaliações</h3>
+
+<div
+class="numero"
+id="totalAvaliacoes">
+
+0
+
+</div>
+
+</div>
+
+<div class="box">
+
+<h3>Média das Estrelas</h3>
+
+<div
+class="numero"
+id="mediaEstrelas">
+
+0
+
+</div>
+
+</div>
+
+<div class="box">
+
+<h3>Livro Mais Bem Avaliado</h3>
+
+<div
+class="numero"
+id="melhorLivro"
+style="font-size:18px;">
+
+Nenhum
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Avaliações Recebidas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Aluno</th>
+
+<th>Livro</th>
+
+<th>Estrelas</th>
+
+<th>Comentário</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaAvaliacoes">
+
+<tr>
+
+<td colspan="4">
+
+Nenhuma avaliação encontrada.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<button
+class="atualizar"
+onclick="carregarAvaliacoes()">
+
+🔄 Atualizar
+
+</button>
+
+<button
+class="limpar"
+onclick="limparAvaliacoes()">
+
+🗑 Limpar Avaliações
+
+</button>
+
+<button
+class="voltar"
+onclick="window.location='gestao.html'">
+
+⬅ Voltar
+
+</button>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

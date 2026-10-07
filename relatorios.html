@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relatórios da Biblioteca</title>
+
+    <link rel="stylesheet" href="css/cores_bli.css">
+    <link rel="stylesheet" href="css/relatorios.css">
+
+    <script src="js/relatorio_bli.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📊 Relatório Mensal da Biblioteca</h1>
+
+    <p>Área do Bibliotecário</p>
+
+</header>
+
+
+<div class="container">
+
+
+    <!-- ================================================= -->
+    <!-- INFORMAÇÕES DO RELATÓRIO -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>📅 Informações do Relatório</h2>
+
+
+        <label>Nome do Bibliotecário</label>
+
+        <input
+            type="text"
+            id="bibliotecario"
+        >
+
+
+        <label>Data</label>
+
+        <input
+            type="date"
+            id="dataRelatorio"
+        >
+
+
+        <label>Mês</label>
+
+        <select id="mes">
+
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+
+        </select>
+
+
+        <label>Ano</label>
+
+        <input
+            type="number"
+            id="ano"
+            value="2026"
+        >
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- ESTATÍSTICAS AUTOMÁTICAS -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>📊 Estatísticas Automáticas</h2>
+
+
+        <div class="grid">
+
+
+            <div class="stat">
+
+                <h3>📚 Livros</h3>
+
+                <div
+                    class="numero"
+                    id="totalLivros"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <div class="stat">
+
+                <h3>📖 Empréstimos</h3>
+
+                <div
+                    class="numero"
+                    id="totalEmprestimos"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <div class="stat">
+
+                <h3>⚠️ Atrasados</h3>
+
+                <div
+                    class="numero"
+                    id="totalAtrasados"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <div class="stat">
+
+                <h3>⭐ Avaliações</h3>
+
+                <div
+                    class="numero"
+                    id="totalAvaliacoes"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- GÊNEROS E RETIRADAS -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+
+        <div class="relatorio-duplo">
+
+
+            <!-- ========================================= -->
+            <!-- LIVROS POR GÊNERO -->
+            <!-- ========================================= -->
+
+            <div class="relatorio-coluna">
+
+                <h2>📚 Livros por Gênero</h2>
+
+
+                <div
+                    id="listaGeneros"
+                    class="lista"
+                >
+
+                    Nenhum livro cadastrado.
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================================= -->
+            <!-- RETIRADAS POR GÊNERO -->
+            <!-- ========================================= -->
+
+            <div class="relatorio-coluna">
+
+                <h2>📖 Retirada de livros</h2>
+
+
+                <div
+                    id="listaRetiradas"
+                    class="lista"
+                >
+
+                    Nenhuma retirada encontrada.
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- ALUNOS ATRASADOS -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>⚠️ Alunos com Livros Atrasados</h2>
+
+
+        <div
+            id="listaAtrasados"
+            class="lista"
+        >
+
+            Nenhum registro encontrado.
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- AVALIAÇÕES -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>⭐ Avaliações dos Alunos</h2>
+
+
+        <div
+            id="listaAvaliacoes"
+            class="lista"
+        >
+
+            Nenhuma avaliação encontrada.
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- RELATÓRIO DO MÊS -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>📝 Relatório do Mês</h2>
+
+
+        <div class="alerta">
+
+            💾 O relatório pode ser salvo como rascunho
+            e continuado depois.
+
+        </div>
+
+
+        <textarea
+            id="relatorio"
+            placeholder="Escreva aqui tudo o que aconteceu na biblioteca durante o mês..."
+        ></textarea>
+
+
+        <button
+            class="salvar"
+            onclick="salvarRascunho()"
+        >
+
+            💾 Salvar Rascunho
+
+        </button>
+
+
+        <button
+            class="enviar"
+            onclick="enviarGestao()"
+        >
+
+            📤 Enviar para Gestão
+
+        </button>
+
+
+        <button
+            class="voltar"
+            onclick="window.location='bibliotecario.html'"
+        >
+
+            ⬅ Voltar
+
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Empréstimos</title>
+
+    <link rel="stylesheet" href="css/cores_bli.css">
+
+    <link rel="stylesheet" href="css/emprestimos.css">
+
+    <script src="js/emprestimo.js" defer></script>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📚 Registro de Empréstimos</h1>
+
+    <p>Biblioteca Escolar</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+    <!-- ======================================= -->
+    <!-- NOME DO ALUNO -->
+    <!-- ======================================= -->
+
+    <label>Nome do Aluno</label>
+
+    <input
+        type="text"
+        id="aluno"
+        placeholder="Digite o nome do aluno"
+    >
+
+
+
+    <!-- ======================================= -->
+    <!-- PESQUISA DO LIVRO -->
+    <!-- ======================================= -->
+
+    <label>Livro</label>
+
+    <input
+        type="text"
+        id="livro"
+        list="listaLivros"
+        placeholder="Digite o nome do livro para pesquisar..."
+        autocomplete="off"
+    >
+
+
+    <datalist id="listaLivros"></datalist>
+
+
+
+    <!-- ======================================= -->
+    <!-- DATA DO EMPRÉSTIMO -->
+    <!-- ======================================= -->
+
+    <label>Data do Empréstimo</label>
+
+    <input
+        type="date"
+        id="emprestimo"
+    >
+
+
+
+    <!-- ======================================= -->
+    <!-- DATA DE DEVOLUÇÃO -->
+    <!-- ======================================= -->
+
+    <label>Data de Devolução</label>
+
+    <input
+        type="date"
+        id="devolucao"
+    >
+
+
+
+    <!-- ======================================= -->
+    <!-- BOTÃO REGISTRAR -->
+    <!-- ======================================= -->
+
+    <button
+        class="salvar"
+        onclick="registrarEmprestimo()"
+    >
+
+        📚 Registrar Empréstimo
+
+    </button>
+
+
+
+    <!-- ======================================= -->
+    <!-- BOTÃO VOLTAR -->
+    <!-- ======================================= -->
+
+    <button
+        class="voltar"
+        onclick="window.location='bibliotecario.html'"
+    >
+
+        ⬅ Voltar
+
+    </button>
+
+
+
+    <!-- ======================================= -->
+    <!-- TABELA -->
+    <!-- ======================================= -->
+
+    <h2>Empréstimos Registrados</h2>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Aluno</th>
+
+                <th>Livro</th>
+
+                <th>Empréstimo</th>
+
+                <th>Devolução</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="listaEmprestimos">
+
+        </tbody>
+
+    </table>
+
+
+</div>
+
+
+
+</body>
+
+</html>

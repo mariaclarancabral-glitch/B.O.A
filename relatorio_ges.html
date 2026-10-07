@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gestão - Relatórios</title>
+
+
+<link rel="stylesheet" href="css/relatorios_gestao.css">
+
+<link rel="stylesheet" href="css/gestao.css">
+
+<script src="js/relatorio_ges.js" defer></script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+<header>
+
+<h1>🏫 Área da Gestão</h1>
+
+<p>
+
+Consulta de Relatórios dos Bibliotecários
+
+</p>
+
+</header>
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="card">
+
+
+
+<h2>🔎 Pesquisar Relatório</h2>
+
+
+
+
+
+<label>
+
+Escolha a Escola
+
+</label>
+
+
+
+
+
+<select id="escola">
+
+
+
+<option value="">
+
+Selecione a escola
+
+</option>
+
+
+
+
+<option>
+
+Escola Municipal Central
+
+</option>
+
+
+
+
+<option>
+
+Escola Estadual São Paulo
+
+</option>
+
+
+
+
+<option>
+
+Colégio Nova Geração
+
+</option>
+
+
+
+
+<option>
+
+Escola Jardim das Flores
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+
+
+<label>
+
+Nome do Bibliotecário
+
+</label>
+
+
+
+
+
+<select id="bibliotecario">
+
+
+
+<option value="">
+
+Selecione o bibliotecário
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+
+
+<label>
+
+Mês e Ano
+
+</label>
+
+
+
+
+<input type="month" id="data">
+
+
+
+
+
+
+
+
+
+<button onclick="buscarRelatorio()">
+
+🔍 Procurar Relatório
+
+</button>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<h2>
+
+📄 Relatório Encontrado
+
+</h2>
+
+
+
+
+
+<div id="resultado" class="relatorio">
+
+
+
+Nenhum relatório pesquisado.
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- BOTÃO VOLTAR -->
+
+<button 
+
+class="btn-voltar"
+
+onclick="voltarPagina()">
+
+
+
+⬅️ Voltar
+
+
+
+</button>
+
+
+
+</body>
+
+</html>
