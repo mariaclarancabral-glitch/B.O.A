@@ -1,0 +1,39 @@
+/* ==========================
+   CORES DA PÁGINA INDEX
+========================== */
+
+
+:root{
+
+
+    --cor-fundo:#d08d7b;
+
+
+    --cor-header:#9a3636;
+
+
+    --cor-container:white;
+
+
+    --cor-input:#f3b1b1;
+
+
+    --cor-botao:#7e270f;
+
+
+    --cor-botao-texto:#f5f0d4;
+
+
+    --cor-hover:#fcf6b0;
+
+
+    --cor-secundario:#555;
+
+
+    --cor-secundario-hover:#333;
+
+
+    --cor-erro:red;
+
+
+}

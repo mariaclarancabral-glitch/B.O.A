@@ -1,0 +1,110 @@
+/* ==========================
+   LIVROS ATRASADOS
+========================== */
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+
+
+
+
+th,
+td{
+
+    border:1px solid #ccc;
+
+    padding:10px;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+
+
+
+
+th{
+
+    background:var(--cor-header);
+
+    color:white;
+
+}
+
+
+
+
+
+/* NOME DO ALUNO */
+
+.aluno{
+
+    color:rgb(227, 196, 196);
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* NOME DO LIVRO */
+
+.atrasado{
+
+    color:rgb(250, 237, 237);
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* STATUS */
+
+.bloqueio{
+
+    color:red;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    color:rgb(255, 252, 252);
+
+    font-size:16px;
+
+    margin-top:10px;
+    background-color:var(--cor-voltar);
+    color:rgb(254, 235, 235)
+}
+

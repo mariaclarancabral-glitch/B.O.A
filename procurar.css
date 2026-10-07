@@ -1,0 +1,171 @@
+/* ==========================
+   PROCURAR LIVROS
+========================== */
+
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:var(--cor-fundo);
+
+    margin:0;
+
+}
+
+
+
+header{
+
+    background:var(--cor-header);
+
+    color:var(--cor-texto);
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+.container{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    background:var(--cor-container);
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+input,
+select{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:5px;
+
+    border:1px solid var(--cor-borda);
+
+    border-radius:5px;
+
+    box-sizing:border-box;
+
+}
+
+
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+
+
+.pesquisar{
+
+    background:var(--cor-pesquisar);
+
+    color:white;
+
+}
+
+
+
+.pesquisar:hover{
+
+    background:var(--cor-pesquisar-hover);
+
+}
+
+
+
+.voltar{
+
+    background:var(--cor-voltar);
+
+    color:white;
+
+}
+
+
+
+.voltar:hover{
+
+    background:var(--cor-voltar-hover);
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    margin-top:30px;
+
+    border-collapse:collapse;
+
+}
+
+
+
+table th{
+
+    background:var(--cor-pesquisar);
+
+    color:white;
+
+    padding:10px;
+
+}
+
+
+
+table td{
+
+    border:1px solid var(--cor-borda);
+
+    padding:8px;
+
+    text-align:center;
+
+}

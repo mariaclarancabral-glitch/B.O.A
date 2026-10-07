@@ -1,0 +1,165 @@
+/* ==========================
+   ÁREA DO BIBLIOTECÁRIO
+========================== */
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:var(--cor-fundo);
+
+    text-align:center;
+
+}
+
+
+
+
+
+header{
+
+    background:var(--cor-header);
+
+    color:var(--cor-header-texto);
+
+    padding:25px;
+
+}
+
+
+
+
+
+header h1{
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+.container{
+
+    margin-top:40px;
+
+}
+
+
+
+
+
+h2{
+
+    color:var(--cor-titulo);
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.menu-btn{
+
+
+    display:block;
+
+
+    margin:15px auto;
+
+
+    padding:15px;
+
+
+    width:300px;
+
+
+    font-size:16px;
+
+
+    background:var(--cor-botao);
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:8px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.menu-btn:hover{
+
+
+    background:var(--cor-botao-hover);
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+
+
+footer{
+
+
+    margin-top:50px;
+
+
+    background:var(--cor-footer);
+
+
+    color:var(--cor-footer-texto);
+
+
+    padding:15px;
+
+
+}
+
+
+
+
+
+a{
+
+
+    text-decoration:none;
+
+
+}

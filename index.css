@@ -1,0 +1,268 @@
+/* ==========================
+   PÁGINA INDEX
+   LOGIN / CADASTRO
+========================== */
+
+
+
+body{
+
+
+    font-family:Arial,sans-serif;
+
+
+    background:var(--cor-fundo);
+
+
+    margin:0;
+
+
+}
+
+
+
+
+
+/* CABEÇALHO */
+
+
+header{
+
+
+    background:var(--cor-header);
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+
+/* CAIXA PRINCIPAL */
+
+
+.container{
+
+
+    width:420px;
+
+
+    background:var(--cor-container);
+
+
+    margin:40px auto;
+
+
+    padding:25px;
+
+
+    border-radius:10px;
+
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+
+/* CAMPOS */
+
+
+label{
+
+
+    display:block;
+
+
+    margin-top:15px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+input,
+select{
+
+
+    width:100%;
+
+
+    padding:10px;
+
+
+    margin-top:5px;
+
+
+    border:1px solid var(--cor-input);
+
+
+    border-radius:5px;
+
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+
+
+/* BOTÕES */
+
+
+button{
+
+
+    width:100%;
+
+
+    padding:12px;
+
+
+    margin-top:20px;
+
+
+    border:none;
+
+
+    border-radius:5px;
+
+
+    background:var(--cor-botao);
+
+
+    color:var(--cor-botao-texto);
+
+
+    font-size:16px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+button:hover{
+
+
+    background:var(--cor-hover);
+
+
+    color:black;
+
+
+}
+
+
+
+
+
+
+/* BOTÃO SECUNDÁRIO */
+
+
+.secundario{
+
+
+    background:var(--cor-secundario);
+
+
+}
+
+
+
+
+
+.secundario:hover{
+
+
+    background:var(--cor-secundario-hover);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+/* MENSAGEM */
+
+
+#mensagem{
+
+
+    margin-top:15px;
+
+
+    text-align:center;
+
+
+    font-weight:bold;
+
+
+    color:var(--cor-erro);
+
+
+}
+
+
+
+
+
+
+/* ESCONDER CADASTRO */
+
+
+.oculto{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+/* TÍTULOS */
+
+
+h2{
+
+
+    text-align:center;
+
+
+}

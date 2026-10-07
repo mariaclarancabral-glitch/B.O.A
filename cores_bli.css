@@ -1,0 +1,55 @@
+/* ==========================
+   CORES BIBLIOTECÁRIO
+========================== */
+
+
+:root{
+
+
+    --cor-fundo:#f0f2f5;
+
+
+    --cor-header:#2c3e50;
+
+
+    --cor-header-texto:white;
+
+
+    --cor-titulo:#333;
+
+
+    --cor-botao:#3498db;
+
+
+    --cor-botao-hover:#2980b9;
+
+
+    --cor-footer:#2c3e50;
+
+
+    --cor-footer-texto:white;
+
+
+}
+
+:root{
+
+    --cor-fundo:#f0f2f5;
+
+    --cor-header:#2c3e50;
+
+    --cor-texto:white;
+
+    --cor-container:white;
+
+    --cor-borda:#ccc;
+
+    --cor-pesquisar:#3498db;
+
+    --cor-pesquisar-hover:#2980b9;
+
+    --cor-voltar:#7f8c8d;
+
+    --cor-voltar-hover:#636e72;
+
+}

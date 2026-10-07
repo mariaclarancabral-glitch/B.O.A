@@ -1,0 +1,143 @@
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f0f2f5;
+
+    margin:0;
+
+}
+
+
+header{
+
+    background:#2c3e50;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+
+.container{
+
+    width:95%;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+th{
+
+    background:#3498db;
+
+    color:white;
+
+    padding:10px;
+
+}
+
+
+td{
+
+    border:1px solid #ccc;
+
+    padding:8px;
+
+    text-align:center;
+
+}
+
+
+
+/* QUADRADO DE STATUS */
+
+.status{
+
+    width:35px;
+
+    height:35px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    margin:auto;
+
+}
+
+
+
+.pendente{
+
+    background:gray;
+
+}
+
+
+
+.devolvido{
+
+    background:green;
+
+}
+
+
+
+.atrasado{
+
+    background:red;
+
+}
+
+
+
+
+button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#7f8c8d;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+button:hover{
+
+    background:#636e72;
+
+}

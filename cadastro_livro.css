@@ -1,0 +1,185 @@
+/* ==========================
+   CADASTRO DE LIVROS
+========================== */
+
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:var(--cor-fundo);
+
+    margin:0;
+
+}
+
+
+
+header{
+
+    background:var(--cor-header);
+
+    color:var(--cor-texto);
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+.container{
+
+    background:white;
+
+    width:700px;
+
+    max-width:90%;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+input,
+select{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:5px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    box-sizing:border-box;
+
+}
+
+
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.salvar{
+
+    background:#27ae60;
+
+    color:white;
+
+}
+
+
+
+
+
+.salvar:hover{
+
+    background:#219150;
+
+}
+
+
+
+
+
+.voltar{
+
+    background:#7f8c8d;
+
+    color:white;
+
+}
+
+
+
+
+
+.voltar:hover{
+
+    background:#636e72;
+
+}
+
+
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+table th{
+
+    background:#3498db;
+
+    color:white;
+
+    padding:10px;
+
+}
+
+
+
+
+
+table td{
+
+    border:1px solid #ccc;
+
+    padding:8px;
+
+    text-align:center;
+
+}
